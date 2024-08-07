@@ -1,0 +1,64 @@
+/* Existing styles for navbar, hero section, etc. */
+
+/* Cards Section */
+.cards-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.card {
+    
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.btn {
+    
+    gap: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
